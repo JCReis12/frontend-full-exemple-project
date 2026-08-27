@@ -6,6 +6,8 @@ type ApiResponse = {
   status: string
 }
 
+const apiUrl = import.meta.env.VITE_API_URL || 'http://localhost:3000'
+
 function App() {
   const [apiData, setApiData] = useState<ApiResponse | null>(null)
   const [error, setError] = useState('')
@@ -15,7 +17,7 @@ function App() {
     setIsLoading(true)
     setError('')
 
-    fetch('http://localhost:3000/')
+    fetch(`${apiUrl}/`)
       .then((response) => {
         if (!response.ok) {
           throw new Error('A API respondeu com erro.')
