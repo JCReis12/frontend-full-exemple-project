@@ -31,6 +31,10 @@ function App() {
 
   useEffect(() => {
     loadApiData()
+
+    const refreshInterval = window.setInterval(loadApiData, 30000)
+
+    return () => window.clearInterval(refreshInterval)
   }, [])
 
   return (
