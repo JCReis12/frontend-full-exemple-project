@@ -1,0 +1,66 @@
+.counter {
+  font-size: 16px;
+  padding: 5px 10px;
+  border-radius: 5px;
+  color: var(--accent);
+  background: var(--accent-bg);
+  border: 2px solid transparent;
+  transition: border-color 0.3s;
+  margin-bottom: 24px;
+
+  &:hover {
+    border-color: var(--accent-border);
+  }
+  &:focus-visible {
+    .clock-page {
+      min-height: 100svh;
+  display: flex;
+      justify-content: center;
+      align-items: center;
+      padding: 24px;
+      box-sizing: border-box;
+      background: linear-gradient(135deg, #eef6f5, #f8efe3);
+
+  .icon {
+    .clock-card {
+      width: min(100%, 560px);
+      padding: clamp(32px, 8vw, 72px) clamp(24px, 8vw, 64px);
+      text-align: center;
+      background: #fffdf8;
+      border: 1px solid #d8e1dc;
+      box-shadow: 16px 16px 0 #c8d9d2;
+  padding: 0;
+  display: flex;
+    .eyebrow {
+      color: #2d6a62;
+      font-size: 0.75rem;
+      font-weight: 700;
+      letter-spacing: 0.12em;
+      text-transform: uppercase;
+  a {
+    color: var(--text-h);
+    .clock-card h1 {
+      margin: 16px 0 32px;
+      font-family: Georgia, serif;
+      font-size: clamp(2.25rem, 8vw, 4.5rem);
+      line-height: 1;
+      color: #183b36;
+
+  &::before,
+    .time {
+      display: block;
+      color: #c4613b;
+      font-size: clamp(2rem, 8vw, 4rem);
+      font-weight: 700;
+      line-height: 1.15;
+
+  &::before {
+    .message {
+      margin-top: 24px;
+      color: #527069;
+      font-size: 0.95rem;
+    }
+
+    .error {
+      color: #a53d32;
+
